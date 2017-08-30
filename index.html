@@ -1,0 +1,241 @@
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>Maths Villa</title>
+<meta name="Created by" content="Mahesh, Manoj">
+<meta name="date" content="2013-04-05T17:52:36+0530" >
+<meta name="copyright" content="Unified Waves">
+<meta name="keywords" content="Maths villa">
+<meta name="description" content="Practice your maths skills from addition to calculus and everything in between and just have some fun with questions.">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/myapp.js"></script>
+<link rel="stylesheet" type="text/css" href="css/myapp.css">
+</head>
+<body>
+<div id="site_wrapper">
+	<div id="site_header">
+		<div id="logo">TITANISU</div>	
+		<div id="menu">
+			<ul>
+				<li id="about">About</li>
+				<li id="contact">Contact us</li>
+				<li id="sitemap">Site map</li>
+				<li id="signin" style="display:none;" onclick="showlogin()">Sign In</li>
+				<li id="userArea" style="display:none;"></li>
+			</ul>
+		</div>
+	</div>
+	<div id="site_body">
+		<div id="box_wrapper" class="page">
+			<div id="zero_div" class="nums vertical">
+				<div id="up"></div>
+				<div id="zero_title">
+					<table>
+							<tr>
+									<td>
+										<img src='img/intro.png' style="vertical-align: middle; padding: 5px;">
+									</td>
+									<td>
+										<span id="stitle">Introduction</span><br><span id="subtitle">Practice your maths skills from addition to calculus and just have some fun with questions.</span>
+									</td>
+							</tr>
+					</table>
+				</div>
+				<span id="numb">00</span>
+				<span id="showtext" class="showtext">Maths Villa</span>
+			</div>
+			<div id="one_div" class="nums horizontal">
+				<div id="right"></div>
+				<div id="one_title">
+				<table width="120%">
+							<tr>
+									<td style="vertical-align: top;">
+										<img src='img/play.png' style="vertical-align: top; padding: 5px;">
+									</td>
+									<td>
+										<span id="stitle" style="color: #e65179;">Quick Play</span><br><span id="subtitle" style="color: #e65179;">Attempt every question and challenge the time with your capabilities and talent.</span>
+									</td>
+							</tr>
+					</table>
+				</div>
+				<span id="numb_1">01</span>
+			<span id="showtext_1" class="showtext">Quick Play</span>
+			</div>
+			<div id="two_div" class="nums vertical">
+				<div id="down"></div>
+				<div id="two_title">
+				<table width="150%">
+							<tr>
+									<td style="vertical-align: top;">
+										<img src='img/challenge.png' style="vertical-align: top; padding: 5px;">
+									</td>
+									<td>
+										<span id="stitle" style="color: #5fc3e7;">Challenges</span><br><span id="subtitle" style="color: #5fc3e7;">Attempt every question and challenge the time with your capabilities and talent.</span>
+									</td>
+							</tr>
+					</table>
+					</div>
+				<span id="numb_2">02</span>
+				<span id="showtext_2" class="showtext">Challenges</span>
+			</div>
+			<div id="three_div" class="nums horizontal">
+				<div id="left"></div>
+				<div id="three_title">
+					<table width="45%">
+							<tr>
+									<td style="vertical-align: top;">
+										<img src='img/online.png' style="vertical-align: top; padding: 5px;">
+									</td>
+									<td>
+										<span id="stitle" style="color: #385e61;">Tournaments</span><br><span id="subtitle" style="color: #385e61;">Be faster and smarter in solving questions while challenging the world with your capability and talent in solving questions.</span>
+									</td>
+							</tr>
+					</table>
+				</div>
+				<span id="numb_3">03</span>
+				<span id="showtext_3" class="showtext">Tournaments</span>
+			</div>
+		</div>
+		<div id="create_acc" class="page">
+			<h1>Create Account</h1>
+			<table summary="" cellpadding="3">
+				<tr><td>Full name<br><input class="inputBox" type="text" id="signupFname"></td></tr>
+				<tr><td>Username<br><input class="inputBox" type="text" id="signupUname"></td></tr>
+				<tr><td>Password<br><input class="inputBox" type="password" id="signupPasswd1"></td></tr>
+				<tr><td>Confirm Password<br><input class="inputBox" type="password" id="signupPasswd2"></td></tr>
+				<tr><td>Date of Birth<br><input class="inputBox" type="date" placeholder="MM/DD/YYYY" id="signupDob"></td></tr>
+				<tr>
+					<td>Security Question<br>
+					<select class="inputBox" id="signupQuestion" onchange="$('#signupAnswer').show();">
+						<option value="">Select a question from below</option>
+						<option value="What is your first teacher name?">What is your first teacher's name?</option>
+						<option value="What is the name of your first crush?">What is the name of your first crush?</option>
+					</select><br><br>
+					<input type="text" class="inputBox" id="signupAnswer" style="display:none;" placeholder="Answer">
+					</td>
+				</tr>
+				<tr><td colspan="2"><div class="Button" id="signIn" onclick="creataccount()">Create Account</div></td></tr>
+				<tr><td><div id="signupHint" style="display:none;"></div></td></tr>
+			</table>
+		</div>
+		<div id="question_body" class="page">
+			<div id="main_body_title">
+				<div id="quick_play_wrapper">
+					<div id="quick_play_title" class="top_title">Quick Play</div>
+					<div id="quick_play_options" style="background: white;border-radius:0 0 3px 3px;">
+						<div id='optdiv'>
+							<div class='optimg' style='color: rgb(95,195,231)' onclick="start_new('mix')"><img src='img/start_big.png'><br>Start Test</div>
+							<div class='optimg' style='color: rgb(95,195,231)' onclick="showoptlist()"><img src='img/customize_big.png'><br>Customize</div>
+							<div class='optimg' style='color: rgb(95,195,231)' onclick="gotohome()"><img src='img/quit_big.png'><br>Back to Home</div>
+						</div>
+						<div id="scat">
+							<div id="back_to" onclick="showcat('Quick Play')"><span style="cursor: pointer;"><img src="img/back_to.png" width="8%"></span></div>
+							<br>
+							<div id="cat" onclick="start_new('as')"> Addition & Substraction </div>
+							<div id="cat" onclick="start_new('md')"> Multiplication & Division </div>
+							<div id="cat" onclick="start_new('sq')"> Square & Cube roots </div>
+							<div id="cat" onclick="start_new('fac')"> Factorial Problems </div>
+							<div id="cat" onclick="start_new('mix')"> Mixed operators </div>
+							<div id="cat" onclick="start_new('appr')"> Approximation </div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<div id="challenges_wrapper">
+					<div id="challenges_title" class="top_title">Challenges</div>
+					<div id="challenges_options" style="background: white;border-radius:0 0 3px 3px;">
+						<div id='optdiv'>
+							<div class='optimg' style='color: rgb(95,195,231)'><img src='img/pathing.png'></div>
+							<div class='optimg' style='color: rgb(95,195,231)'><img src='img/agriculture.png'></div>
+							<div class='optimg' style='color: rgb(95,195,231)'><img src='img/industry.png'></div>
+							<div class='optimg' style='color: rgb(95,195,231)'><img src='img/hospital.png'></div>
+							<div class='optimg' style='color: rgb(95,195,231)'><img src='img/companies.png'></div>
+							<div class='optimg' style='color: rgb(95,195,231)'><img src='img/bank.png'></div>
+						</div>
+						<br>
+					</div>
+				</div>
+				<div id="selected_questions">
+					<table width="100%">
+						<tr>
+							<td>
+								<div id="home">
+									<div id="tstatus" class="page">
+										<div id="timestatus"></div>
+									</div>
+									<div id="qbody"></div>
+									<div id="output"></div>
+									<div id="hintz"></div>
+									<div id="start_again">
+										<table>
+											<tr>
+												<td align="right"><img src='img/again.png' onclick="start_again('id1')"></td>
+												<td align="left"><span onclick="start_again('id1')">Start Again</span></td>
+											</tr>
+										</table>
+									</div>
+									<span id="time" style="visibility: hidden; border: 1px solid red;"></span>
+									<span id="action_buttons">
+										<div style="padding: 15px 0px;"><input type="text" name="ans" id="ans_input"size="5" /></div>
+										<div style="padding: 25px 0px;">
+										<input type="submit" name="submit" id="submit" class="Subm" onclick="check_answ()" value="CHECK" />
+										<input type="submit" name="next" id="skip" class="Subm" onclick="qus_skip()" value="SKIP" />
+										<input type="submit" name="next" id="cancel" class="Subm" onclick="cancel_q()" value="CANCEL" />
+										</div>
+									</span>
+								</div>
+							</td>
+							<td width="28%" style="vertical-align: top;">
+								<div id="select_categories">
+									<div id="stat">
+										<span id="result">
+											<table>
+												<tr><td colspan="2" style="font-size:20px;border-bottom: 1px solid #444444;box-shadow:0 5px 3px -3px silver;">Progress</td></tr>
+												<tr><td class="td1" id="rat"><img src="img/right.png"></td><td id="ra" class="td2"></td></tr>
+												<tr><td class="td1" id="wat"><img src="img/wrong.png"></td><td id="wa" class="td2"></td></tr>
+												<!--<tr><td class="td1" id="sqt"><img src="img/skip.png"></td><td id="sq" class="td2"></td></tr>-->
+												<tr><td colspan="2" id="timer" style="font-family:blaster;font-size:55px;color:rgb(90,152,173);padding-left:10px;padding-top:10px;text-align: center;"></td></tr>
+												<tr class="subt"><td style="color:#00a2e8;text-align:right;">Submit</td><td style="padding:1px;text-align:left;"><span id="key">&crarr; Enter </span></td></tr>
+												<tr class="subt"><td style="color:#00a2e8;text-align:right;">Skip</td><td style="padding:<1px;text-align:left;"><span id="key">&rarr; Arrow </span></td></tr>
+											</table>
+										</span>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+	<!--
+	<div id="footer">
+		<span>&copy; Powered by The Unified Waves</span><span style="float: right">Website best viewed in Latest versions of Browsers.</span>
+	</div>
+	-->
+</div>
+<div id="back"></div>
+<div id="login_wrapper">
+	<span id="close" onclick="hidelogin()">&times;</span>
+	<div id="login_title">Sign In</div>
+	<div id="login_content">
+		<table>
+			<tr><td>Username<br><input class="inputBox" type="text" id="loginUname"></td></tr>
+			<tr><td>Password<br><input class="inputBox Password" type="password" id="loginPasswd">&nbsp;&nbsp;<a>Forgot?</a></td></tr>
+			<tr><td colspan="2"><div class="Button" id="signIn" onclick="signin()">Sign In</div></td></tr>
+			<tr><td colspan="2">Don't have an account? <a onclick="showcreateacc()">Create One</a></td></tr>
+			<tr><td><div id="signinHint" style="display:none;"></div></td></tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

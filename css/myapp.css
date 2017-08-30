@@ -1,0 +1,118 @@
+body
+{
+	font-family: calibri, sans, ubuntu;
+}
+#qbody
+{
+	font-size: 55px;
+	color: #00a2e8;
+	font-weight: bold;
+	text-align: center
+	padding: 20px;
+	width: 100%;
+	padding-top: 1.5em;
+}
+#ans_input
+{
+	border: 1px solid silver;
+	padding: 15px 10px;
+	width: 39%;
+	font-size: 22px;
+	color: rgb(90,152,173);
+	box-shadow: 0px 0px 10px 6px silver;
+	
+}
+#result
+{
+	font-size: 16px;
+	color: #444444;
+}
+.Subm
+{
+	padding: 10px 35px;
+	font-size: 22px;
+	border: 1px solid silver;
+	color: #2E3F47;
+	margin-top: 30px;
+	margin-right: 20px;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkitborder-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	background: -moz-linear-gradient(center top , #f2f2f3 , #dee0e1) repeat scroll 0% 0% transparent;
+	background: -webkit-linear-gradient(top, #f2f2f3 20%, #dee0e1 100%) repeat scroll 0% 0% transparent;
+	background: -ms-linear-gradient(top, #f2f2f3 20%, #dee0e1 100%) repeat scroll 0% 0% transparent;
+	background: -o-linear-gradient(center top , #f2f2f3, #dee0e1) repeat scroll 0% 0% transparent;
+	background: linear-gradient(center top , #f2f2f3, #dee0e1) repeat scroll 0% 0% transparent;
+}
+.td1
+{
+	width: 65%;
+	font-size: 16px;
+	text-align: center;
+}
+.td2
+{
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+}
+#result table tr td
+{
+	padding: 10px;
+	border-spacing: 0;
+	text-align: center;
+}
+#result table
+{
+	width: 95%;
+	font-size: 18px;
+}
+#cqt,#cq
+{
+	color: #5488BC;
+}
+
+#rat,#ra
+{
+	color: green;
+}
+#wat,#wa
+{
+	color: #CB4548;
+}
+#sqt,#sq
+{
+	color: #444444;
+}
+#qcountdiv
+{
+	margin-left: -100px;
+	margin-right: 100px;
+	color: silver;
+}
+#start_again
+{
+	cursor: pointer;
+}
+#start_again img
+{
+	width: 50%;
+	clear: left;
+}
+#start_again table
+{
+	margin: 0px auto;
+	font-size: 28px;
+	font-weight: bold;
+}
+#output
+{
+}
+#congts
+{
+	font-family: forte1;
+	font-size: 50px;
+	color: #CCE61A;
+}
